@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/Blobfishing mechanic.unity
-    - Assets/Scripts/PlayerMovement/scr_AgentMovement.cs
+    - Assets/Scripts/scr_NpcTalk.cs
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 000000
+    m_Values: 010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

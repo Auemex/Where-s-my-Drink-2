@@ -11,9 +11,9 @@ public class scr_Inventory
     public scr_Inventory()
     {
         itemList = new List<scr_Items>();
-        AddItem(new scr_Items {itemType = scr_Items.ItemType.Trophy,amount = 1});
-        AddItem(new scr_Items{itemType = scr_Items.ItemType.Painting,amount = 1});
-        AddItem(new scr_Items {itemType = scr_Items.ItemType.Chair,amount = 1});
+        AddItem(new scr_Items {itemType = scr_Items.ItemType.Konch,amount = 1});
+        AddItem(new scr_Items{itemType = scr_Items.ItemType.Drink,amount = 1});
+        AddItem(new scr_Items {itemType = scr_Items.ItemType.Table,amount = 1});
         Debug.Log(itemList.Count);
     }
 

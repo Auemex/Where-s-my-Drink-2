@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class scr_AgentMovement : MonoBehaviour
 {
-    [SerializeField]
-    GameObject Player;    
     CharacterController controller;
-
-    public float rotationSpeed, movementSpeed, gravity = 1;
+    public float rotationSpeed, movementSpeed, gravity = 20;
     Vector3 movementVector = Vector3.zero;
     public float jumpHeight = 3f;
     private float desiredRotationAngle = 0;
@@ -75,19 +72,7 @@ public class scr_AgentMovement : MonoBehaviour
             {
                 RotateAgent();
             }
-
-            if (Input.GetButtonDown("Jump"))
-            {
-                gravity = -1;
-
-            }
         }
-
-        if (Player.transform.position.y >= 2)
-            gravity = 1;
-
-        Debug.Log("is grounded " + controller.isGrounded);
-
         movementVector.y -= gravity;
         controller.Move(movementVector * Time.deltaTime);
         Debug.Log("y velocity " + movementVector.y);

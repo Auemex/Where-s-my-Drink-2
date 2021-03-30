@@ -38,18 +38,17 @@ public class scr_UI_Inventory : MonoBehaviour
             int x = 0;
             int y = 0;
             // spacing of cells
-            float itemSlotCellSize = 75f;
+            float itemSlotCellSize = 180f;
         foreach(scr_Items item in inventory.GetItemList())
         {
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
-
-
+            
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
-            Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
+            Image image = itemSlotRectTransform.Find("Icon").GetComponent<Image>();
             image.sprite = item.GetSprite();
             x++;
-            if (x>4)
+            if (x>6)
             {
                 x = 0;
                 y++;
