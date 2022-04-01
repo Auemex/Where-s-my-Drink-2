@@ -76,7 +76,7 @@ public class scr_CatchMode : MonoBehaviour
 
 
                 
-                Debug.Log("Test'");
+                Debug.Log("Test");
                 
                 swipePath = false;
 
@@ -97,7 +97,7 @@ public class scr_CatchMode : MonoBehaviour
 
 
                 
-                Debug.Log("Test'");
+                Debug.Log("Test");
                 
                 swipePath = true;
 
